@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+     <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:scrollbarSize="2dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="头条"
+                android:id="@+id/tv1"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="社会"
+                android:id="@+id/tv2"/>
+            <TextView
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="科技"
+                android:id="@+id/tv3"/>
+            <TextView
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="娱乐"
+                android:id="@+id/tv4"/>
+            <TextView
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="体育"
+                android:id="@+id/tv5"/>
+            <TextView
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="财经"
+                android:id="@+id/tv6"/>
+            <TextView
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="教育"
+                android:id="@+id/tv7"/>
+            <TextView
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="编程"
+                android:id="@+id/tv8"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager">
+
+    </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:padding="50dp"
+            android:src="@drawable/tx" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="我的收藏"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/tv_like"
+            android:textSize="25sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
